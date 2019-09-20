@@ -1,0 +1,72 @@
+//colors
+.u {
+  &-color-primary {
+    color: $primary !important;
+  }
+
+  &-bg-primary {
+    background: $primary !important;
+  }
+
+  &-hover {
+    transition: 0.1s;
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+
+  //sizing
+  &-w-fit-content {
+    width: fit-content !important;
+  }
+
+  &-color-unset {
+    color: unset !important;
+  }
+
+  &-font-unset {
+    font-size: unset !important;
+  }
+}
+
+/*heights spacing gutter*/
+.h-gutter-small {
+  height: 5vh;
+}
+.h-gutter-medium {
+  height: 10vh;
+}
+.h-gutter-large {
+  height: 15vh;
+}
+
+.h-gutter-25 {
+  height: 25vh;
+}
+
+.h-gutter-50 {
+  height: 50vh;
+}
+
+.h-gutter-75 {
+  height: 75vh;
+}
+
+//other
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.abs-center {
+  //must be used with comination of position: absolute
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-center {
+  //must be used with combination of Display:flex;
+  justify-content: center;
+  align-items: center;
+}

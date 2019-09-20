@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: $root;
+}
+body {
+  font-family: $font;
+  font-size: 1.4rem;
+  a,
+  a:hover {
+    text-decoration: none;
+    color: unset;
+  }
+  ul {
+    list-style: none;
+  }
+}

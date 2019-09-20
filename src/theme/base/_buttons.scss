@@ -1,0 +1,78 @@
+/*
+This file is been made to give you an example of what kind of files should
+be placed in this componets folder
+*/
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.button {
+  font-size: $plain-text;
+  padding: 1em 2em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px transparent solid;
+  border-radius: 2px;
+  transition: all 0.2s;
+  margin: 0.8em 0.8em 0;
+  width: fit-content;
+  cursor: pointer;
+  &:focus {
+    box-shadow: none;
+  }
+  &_primary {
+    background: $primary;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 100%;
+      background-color: darken($primary, 10%);
+      background-position: center;
+      transition: 0.2s linear;
+      z-index: -1;
+      transform: translate(-50%) scaleX(0);
+      opacity: 0;
+    }
+    &:hover {
+      border: 1px solid lighten($primary, 10%);
+      //background: darken($cta-primary, 10%);
+      color: $white;
+      &:before {
+        width: 100%;
+        transform: translate(-50%) scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+  &_secondary {
+    background: transparent;
+    border: 1px solid lighten($secondary, 10%);
+    color: lighten($secondary, 10%);
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+  &_transparent {
+    &:hover {
+      filter: brightness(0);
+    }
+  }
+  &--small,
+  &_primary--small,
+  &_secondary--small {
+    padding: 0.8em 1.6em;
+    font-size: $notes;
+  }
+  &--big,
+  &_primary--big,
+  &_secondary--big {
+    font-size: $nav-item;
+  }
+}

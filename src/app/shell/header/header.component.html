@@ -1,0 +1,36 @@
+<header class="shadow-sm bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light container px-5">
+    <a class="navbar-brand row" href="/home" translate>
+      <img src="assets/images/logo.png" class="img img-fluid logo" alt="Logo" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="!menuHidden"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link " routerLink="#about" (click)="ScrollToAbout()" routerLinkActive="active">
+          <span translate>About</span>
+        </a>
+        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+          <span translate>Why us</span>
+        </a>
+        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+          <span translate>Connect</span>
+        </a>
+        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+          <span translate>Our Clients</span>
+        </a>
+        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+          <span translate> Testimonial </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

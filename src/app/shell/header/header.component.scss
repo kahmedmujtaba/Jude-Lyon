@@ -1,0 +1,29 @@
+@import "src/theme/theme-variables";
+@import "src/theme/variables";
+@import "src/theme/base/typography";
+
+.navbar {
+  margin-bottom: $spacer;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.logo {
+  height: inherit;
+  max-height: 6rem;
+}
+
+header {
+  .nav-link:not(:last-child) {
+    padding-right: 1.5rem;
+  }
+  .nav-link {
+    color: $color-primary;
+    font-size: $nav-head;
+    &:hover {
+      color: lighten($color-primary, 30);
+    }
+  }
+}

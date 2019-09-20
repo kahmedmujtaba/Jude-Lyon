@@ -1,0 +1,54 @@
+$font: "Jude-Normal", sans-serif;
+$font-bold: "Jude-Bold", sans-serif;
+/*Font Sizes*/
+$root: 65.5%;
+$jumbo: 8rem;
+$page-title: 2.4rem;
+$section-title: 2rem;
+$heading-secondary: 1.8rem;
+$table-cell: 1.4rem;
+$labels: 1.6rem;
+$placeholders: 1.3rem;
+$buttons: 1.4rem;
+$nav-head: 1.6rem;
+$nav-item: 1.4rem;
+$plain-text: 1.3rem;
+$notes: 1.1rem;
+
+// fontface defined in common.scss
+
+@font-face {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  src: local($font), url("/src/assets/fonts/HelveticaNeueLTPro-Lt.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-bold;
+  font-style: normal;
+  font-weight: normal;
+  src: local($font-bold), url("/src/assets/fonts/HelveticaNeueLTPro-Md.woff") format("woff");
+}
+
+// ////////////
+
+.section-title {
+  font-size: $section-title;
+  font-weight: 500;
+}
+.heading-primary {
+  font-size: $section-title;
+  font-weight: 300;
+}
+.heading-secondary {
+  font-size: $heading-secondary;
+  font-weight: 300;
+}
+.heading-tertiary {
+  font-size: $nav-head;
+  font-weight: 400;
+}
+.text-primary-custom {
+  color: darken($color-primary, 25) !important;
+}
