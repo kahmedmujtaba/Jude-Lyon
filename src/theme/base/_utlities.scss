@@ -1,17 +1,17 @@
 //colors
 .u {
   &-color-primary {
-    color: $primary !important;
+    color: $color-primary !important;
   }
 
   &-bg-primary {
-    background: $primary !important;
+    background: $color-primary !important;
   }
 
   &-hover {
     transition: 0.1s;
     &:hover {
-      color: $secondary !important;
+      color: $color-secondary !important;
     }
   }
 
@@ -26,6 +26,12 @@
 
   &-font-unset {
     font-size: unset !important;
+  }
+
+  &-sm-p-0 {
+    @media screen and (max-width: 480px) {
+      padding: 0 !important;
+    }
   }
 }
 

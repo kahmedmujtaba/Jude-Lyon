@@ -1,0 +1,73 @@
+@import "src/theme/variables";
+@import "src/theme/base/typography";
+@import "src/theme/base/utlities";
+
+.ways {
+  &--numbering {
+    position: relative;
+    $base-size: 5rem;
+    &:before {
+      content: "";
+      display: inline-block;
+      background: url(/assets/images/brush-stroke.png) center no-repeat;
+      background-size: contain;
+      height: calc(#{$base-size} * 2);
+      width: calc(#{$base-size} * 2);
+      font-size: $base-size;
+      filter: hue-rotate(15deg);
+      z-index: -1;
+    }
+    &.one,
+    &.two,
+    &.three,
+    &.four,
+    &.five,
+    &.six {
+      &:after {
+        content: "";
+        font-family: $font-outlined;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: $base-size;
+      }
+    }
+    &.one {
+      &:after {
+        content: "1";
+      }
+    }
+    &.two {
+      &:after {
+        content: "2";
+      }
+    }
+    &.three {
+      &:after {
+        content: "3";
+      }
+    }
+    &.four {
+      &:after {
+        content: "4";
+      }
+    }
+    &.five {
+      &:after {
+        content: "5";
+      }
+    }
+    &.six {
+      &:after {
+        content: "6";
+      }
+    }
+  }
+
+  &--text {
+    align-self: flex-end;
+    margin: 0 0 2rem -2rem;
+    z-index: 1;
+  }
+}

@@ -1,17 +1,31 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: $root;
 }
+
 body {
+  @font-face {
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    src: local($font), url("/src/assets/fonts/HelveticaNeueLTPro-Lt.woff") format("woff");
+  }
   font-family: $font;
   font-size: 1.4rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.2rem;
+  }
+
   a,
   a:hover {
     text-decoration: none;
     color: unset;
   }
+
   ul {
     list-style: none;
   }

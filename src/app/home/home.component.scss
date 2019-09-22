@@ -13,28 +13,36 @@ q {
 
 .banner {
   display: flex;
-  align-items: center;
+  height: 80vh;
   overflow: hidden;
 
   &--text {
-    font-size: 2.75rem;
-    &--main {
-      font-size: 5.5rem;
-      &_jude {
-        font-family: $font-bold;
-      }
-    }
+    font-size: $heading-primary;
+    align-self: center;
+    $base-size: 35rem;
+
+    // &--main {
+    //   font-size: $jumbo;
+    //   &_jude {
+    //     font-family: $font-bold;
+    //   }
+    // }
   }
 
   &--image {
     position: relative;
-    $base-size: 25rem;
+    $base-size: 40rem;
+
     &_background {
       background: url(/assets/images/brush-stroke.png) center no-repeat;
       background-size: contain;
       height: calc(#{$base-size} * 1.3);
       width: 100%;
       z-index: -1;
+
+      @media screen and (max-width: 480px) {
+        height: calc(#{$base-size} * 0.6);
+      }
     }
     &_border {
       &:before,
@@ -46,6 +54,10 @@ q {
         transform: translateX(-50%);
         height: $base-size;
         width: $base-size;
+        @media screen and (max-width: 480px) {
+          height: calc(#{$base-size} * 0.6);
+          width: calc(#{$base-size} * 0.6);
+        }
       }
       &:before {
         border: 0.75rem solid $color-white;
@@ -69,6 +81,10 @@ q {
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+
+      @media screen and (max-width: 480px) {
+        height: calc(#{$base-size} * 1);
+      }
     }
   }
 }

@@ -1,13 +1,13 @@
 <div class="container px-5">
   <div class="row banner">
-    <div class="col-md-6 col-xs-12">
-      <div class="banner--text">
-        <h1 class="banner--text--main">
+    <div class="col-md-6 col-xs-12 d-flex">
+      <div class="banner--text ">
+        <h1 class="Jumbo-title banner--text--main">
           Hello ! <br />
           My Name is <br />
-          <span class="banner--text--main_jude">Jude Lyon.</span>
+          <span class="Jumbo-title--bold banner--text--main_jude">Jude Lyon.</span>
         </h1>
-        <span>Someone we both know wants us to meet.</span>
+        <p class="col-10 p-0 heading-primary m-0">Someone we both know wants us to meet.</p>
       </div>
     </div>
     <div class="col-md-6 col-xs-12">
@@ -17,6 +17,7 @@
         <div class="banner--image_model"></div>
       </div>
     </div>
+
     <!-- <h1>
       <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
       <span translate>Hello world !</span>
@@ -24,4 +25,9 @@
     <app-loader [isLoading]="isLoading"></app-loader>
     <q [hidden]="isLoading">Hello</q> -->
   </div>
+
+  <!-- components -->
+  <app-ways-to-work-together></app-ways-to-work-together>
+  <app-whoisjude></app-whoisjude>
+  <app-connecttoday></app-connecttoday>
 </div>

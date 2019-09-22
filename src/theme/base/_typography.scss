@@ -1,10 +1,13 @@
-$font: "Jude-Normal", sans-serif;
-$font-bold: "Jude-Bold", sans-serif;
+$font: "Jude-normal";
+$font-bold: "Jude-bold";
+$font-outlined: "Jude-outlined";
+$font-heavy: "Jude-heavy";
 /*Font Sizes*/
 $root: 65.5%;
-$jumbo: 8rem;
+$jumbo: 5.5rem;
 $page-title: 2.4rem;
 $section-title: 2rem;
+$heading-primary: 2.75rem;
 $heading-secondary: 1.8rem;
 $table-cell: 1.4rem;
 $labels: 1.6rem;
@@ -21,34 +24,69 @@ $notes: 1.1rem;
   font-family: $font;
   font-style: normal;
   font-weight: normal;
-  src: local($font), url("/src/assets/fonts/HelveticaNeueLTPro-Lt.woff") format("woff");
+  src: local($font), url("~src/assets/fonts/HelveticaNeueLTPro-Lt.woff") format("woff");
 }
 
 @font-face {
   font-family: $font-bold;
   font-style: normal;
   font-weight: normal;
-  src: local($font-bold), url("/src/assets/fonts/HelveticaNeueLTPro-Md.woff") format("woff");
+  src: local($font-bold), url("~src/assets/fonts/HelveticaNeueLTPro-Md.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-outlined;
+  font-style: normal;
+  font-weight: normal;
+  src: local($font-outlined), url("~src/assets/fonts/HelveticaNeueLTPro-BdOu.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-heavy;
+  font-style: normal;
+  font-weight: normal;
+  src: local($font-heavy), url("~src/assets/fonts/HelveticaNeueLTPro-Hv.woff") format("woff");
 }
 
 // ////////////
 
-.section-title {
-  font-size: $section-title;
-  font-weight: 500;
+.Jumbo-title {
+  font-size: $jumbo;
+  font-family: $font;
+  @media screen and (max-width: 48rem) {
+    $jumbo: 3.5rem;
+    font-size: $jumbo;
+  }
+  &--bold {
+    font-family: $font-bold;
+  }
 }
+
 .heading-primary {
-  font-size: $section-title;
+  font-size: $heading-primary;
   font-weight: 300;
+  margin-bottom: 5rem;
+  @media screen and (max-width: 48rem) {
+    $heading-primary: 1.75rem;
+    font-size: $heading-primary;
+    margin-bottom: 3rem;
+  }
 }
+
 .heading-secondary {
   font-size: $heading-secondary;
   font-weight: 300;
 }
+
 .heading-tertiary {
   font-size: $nav-head;
   font-weight: 400;
 }
+
 .text-primary-custom {
   color: darken($color-primary, 25) !important;
+}
+
+.lable {
+  font-family: $font-heavy;
 }

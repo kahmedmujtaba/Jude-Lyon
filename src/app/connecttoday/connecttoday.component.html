@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-12">
+    <div class="h-gutter-medium"></div>
+    <h2 class="heading-primary">Lets Connect today.</h2>
+  </div>
+</div>
+
+<div class="row">
+  <!-- <form class="col-12" [formGroup]="visitorForm" (ngSubmit)="sendData()" > -->
+  <form class="col-12 d-flex justify-content-between flex-wrap">
+    <!-- <div class="col-12 col-md-6 p-0 form-group">
+            <label for="inputFirstName" class="lable">First name</label>
+            <input 
+            class="form-control"
+            type="text" 
+            id="inputFirstName"
+            formControlName="firstName"
+            />
+        </div> -->
+
+    <div class="col-12 col-md-5 p-0 form-group">
+      <label for="inputFirstName" class="lable">First name</label>
+      <input class="form-control" type="text" id="inputFirstName" />
+    </div>
+
+    <div class="col-12 col-md-5 p-0 form-group">
+      <label for="inputlastName" class="lable">Last name</label>
+      <input class="form-control" type="text" id="inputlastName" />
+    </div>
+
+    <div class="col-12 col-md-5 p-0 form-group">
+      <label for="city" class="lable">City</label>
+      <input class="form-control" type="text" id="city" />
+    </div>
+
+    <div class="col-12 col-md-5 p-0 form-group">
+      <label for="phone" class="lable">Phone Number</label>
+      <input class="form-control" type="tel" id="phone" />
+    </div>
+
+    <div class="col-12 col-md-5 p-0 form-group">
+      <label for="email" class="lable">Email</label>
+      <input class="form-control" type="email" id="email" />
+    </div>
+
+    <div class="col-12 col-md-5 p-0 form-group">
+      <label for="country" class="lable">Country</label>
+      <select id="country" class="form-control" formControlName="countries">
+        <option [value]="country" *ngFor="let country of countries"> {{ country }} </option>
+      </select>
+    </div>
+  </form>
+</div>

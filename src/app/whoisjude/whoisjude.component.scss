@@ -1,0 +1,15 @@
+@import "src/theme/variables";
+@import "src/theme/base/typography";
+@import "src/theme/base/utlities";
+
+.jude-intro {
+  &--pic {
+    background: url(/assets/images/who-is-Jude.png) center no-repeat;
+    background-size: contain;
+    height: 25rem;
+    width: auto;
+    z-index: -1;
+    transform-origin: top;
+    transform: scale(1.5);
+  }
+}
