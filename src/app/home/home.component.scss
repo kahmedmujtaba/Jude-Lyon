@@ -72,8 +72,7 @@ q {
       }
     }
     &_model {
-      background: url(/assets/images/jude-main.png) center no-repeat;
-      background-size: contain;
+      background: url(/assets/images/jude-main.png) center/contain no-repeat;
       height: calc(#{$base-size} * 1.9);
       width: 100%;
       z-index: 1;

@@ -3,3 +3,14 @@
 .form-control {
   font-size: 1.4rem;
 }
+
+.custom-control-label {
+  $base-scale: 1.4rem;
+  padding-left: $base-scale;
+  &::before,
+  &::after {
+    // left:$base-scale;
+    width: $base-scale;
+    height: $base-scale;
+  }
+}

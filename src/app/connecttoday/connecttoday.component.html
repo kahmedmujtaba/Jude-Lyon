@@ -49,5 +49,19 @@
         <option [value]="country" *ngFor="let country of countries"> {{ country }} </option>
       </select>
     </div>
+
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="termsCheckBox" />
+      <label class="custom-control-label" for="termsCheckBox">
+        By completing the registration, you accept the
+        <a href="#" class="text-primary">terms and conditions</a> and
+        <a href="#" class="text-primary">privacy policy </a> and agree to receive emails and a quarterly newsletter.
+      </label>
+    </div>
+
+    <div>
+      <button class="btn button button_primary ml-0">Send me Information</button>
+      <small class="text-muted">*We Don't Spam, We Hate it Too!</small>
+    </div>
   </form>
 </div>

@@ -1,0 +1,16 @@
+@import "src/theme/variables";
+@import "src/theme/base/typography";
+@import "src/theme/base/utlities";
+
+.client {
+  $base-size: 6rem;
+  height: calc(#{$base-size} * 1.5);
+  width: auto;
+  display: inline-block;
+  padding: 1rem;
+
+  @media screen and (max-width: 480px) {
+    height: calc(#{$base-size} * 1);
+    padding: 0.2rem;
+  }
+}

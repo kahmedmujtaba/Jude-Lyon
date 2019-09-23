@@ -7,7 +7,7 @@ $root: 65.5%;
 $jumbo: 5.5rem;
 $page-title: 2.4rem;
 $section-title: 2rem;
-$heading-primary: 2.75rem;
+$heading-primary: 2.65rem;
 $heading-secondary: 1.8rem;
 $table-cell: 1.4rem;
 $labels: 1.6rem;
@@ -64,12 +64,11 @@ $notes: 1.1rem;
 
 .heading-primary {
   font-size: $heading-primary;
-  font-weight: 300;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   @media screen and (max-width: 48rem) {
-    $heading-primary: 1.75rem;
+    $heading-primary: 2rem;
     font-size: $heading-primary;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
 

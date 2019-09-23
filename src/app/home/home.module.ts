@@ -9,9 +9,16 @@ import { HomeComponent } from './home.component';
 import { WaysToWorkTogetherComponent } from '@app/ways-to-work-together/ways-to-work-together.component';
 import { WhoisjudeComponent } from '@app/whoisjude/whoisjude.component';
 import { ConnecttodayComponent } from '@app/connecttoday/connecttoday.component';
+import { ClientsComponent } from '@app/clients/clients.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule],
-  declarations: [HomeComponent, WaysToWorkTogetherComponent, WhoisjudeComponent, ConnecttodayComponent]
+  declarations: [
+    HomeComponent,
+    WaysToWorkTogetherComponent,
+    WhoisjudeComponent,
+    ConnecttodayComponent,
+    ClientsComponent
+  ]
 })
 export class HomeModule {}
