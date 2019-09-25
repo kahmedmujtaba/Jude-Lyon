@@ -8,6 +8,14 @@
     background: $color-primary !important;
   }
 
+  &-color-secondary {
+    color: $color-secondary !important;
+  }
+
+  &-bg-secondary {
+    background: $color-secondary !important;
+  }
+
   &-hover {
     transition: 0.1s;
     &:hover {
