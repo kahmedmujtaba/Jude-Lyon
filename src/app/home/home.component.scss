@@ -16,6 +16,10 @@ q {
   height: 80vh;
   overflow: hidden;
 
+  @media screen and (min-width: 1441px) {
+    height: 55rem;
+  }
+
   @media screen and (max-width: 1024px) and (min-width: 620px) {
     height: 50rem;
   }
