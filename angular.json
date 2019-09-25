@@ -29,7 +29,11 @@
               "src/manifest.json",
               "src/assets"
             ],
-            "styles": ["src/assets/themify-icons/themify-icons.css", "src/main.scss"],
+            "styles": [
+              "src/assets/themify-icons/themify-icons.css",
+              "src/main.scss",
+              "./node_modules/videogular2/fonts/videogular.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -94,7 +98,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "scripts": [],
-            "styles": ["src/assets/themify-icons/themify-icons.css", "src/main.scss"],
+            "styles": [
+              "src/assets/themify-icons/themify-icons.css",
+              "src/main.scss",
+              "./node_modules/videogular2/fonts/videogular.css"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/apple-touch-icon.png",

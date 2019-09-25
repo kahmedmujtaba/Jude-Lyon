@@ -12,8 +12,24 @@ import { ConnecttodayComponent } from '@app/connecttoday/connecttoday.component'
 import { ClientsComponent } from '@app/clients/clients.component';
 import { VideosectionComponent } from '@app/videosection/videosection.component';
 
+import { VgCoreModule } from 'videogular2/compiled/core';
+import { VgControlsModule } from 'videogular2/compiled/controls';
+import { VgOverlayPlayModule } from 'videogular2/compiled/overlay-play';
+import { VgBufferingModule } from 'videogular2/compiled/buffering';
+// import {SingleMediaPlayer} from './single-media-player';
+
 @NgModule({
-  imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    CoreModule,
+    SharedModule,
+    HomeRoutingModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
+  ],
   declarations: [
     HomeComponent,
     VideosectionComponent,
@@ -22,5 +38,6 @@ import { VideosectionComponent } from '@app/videosection/videosection.component'
     ConnecttodayComponent,
     ClientsComponent
   ]
+  // bootstrap: [SingleMediaPlayer]
 })
 export class HomeModule {}

@@ -1,22 +1,5 @@
-#index-video {
-  height: 100%;
+#singleVideo {
+  background: url(/assets/images/video-thumb.jpg) cover/ center no-repeat;
   width: 100%;
-  object-fit: cover;
-  z-index: -100;
-  right: 0;
-  bottom: 0;
-  background: url(/assets/images/video-thumb.jpg) no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.index-video-wrapper {
   height: 100%;
-  width: 100%;
-  // background: url(/assets/images/video-thumb.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#index-video,
-.index-video-wrapper {
 }
