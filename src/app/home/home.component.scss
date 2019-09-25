@@ -16,17 +16,14 @@ q {
   height: 80vh;
   overflow: hidden;
 
+  @media screen and (max-width: 1024px) and (min-width: 620px) {
+    height: 50rem;
+  }
+
   &--text {
     font-size: $heading-primary;
     align-self: center;
     $base-size: 35rem;
-
-    // &--main {
-    //   font-size: $jumbo;
-    //   &_jude {
-    //     font-family: $font-bold;
-    //   }
-    // }
   }
 
   &--image {
@@ -54,6 +51,10 @@ q {
         transform: translateX(-50%);
         height: $base-size;
         width: $base-size;
+        @media screen and (max-width: 768px) {
+          height: calc(#{$base-size} * 0.8);
+          width: calc(#{$base-size} * 0.8);
+        }
         @media screen and (max-width: 480px) {
           height: calc(#{$base-size} * 0.6);
           width: calc(#{$base-size} * 0.6);

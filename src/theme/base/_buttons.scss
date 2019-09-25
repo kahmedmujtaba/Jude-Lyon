@@ -20,6 +20,7 @@ be placed in this componets folder
   cursor: pointer;
   &:focus {
     box-shadow: none;
+    outline: 0;
   }
   &_primary {
     background: $color-primary;
@@ -74,5 +75,12 @@ be placed in this componets folder
   &_primary--big,
   &_secondary--big {
     font-size: $nav-item;
+  }
+}
+
+vg-playback-button {
+  .button {
+    margin: 0;
+    text-transform: unset;
   }
 }

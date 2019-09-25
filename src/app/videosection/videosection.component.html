@@ -1,4 +1,4 @@
-<div class="h-gutter-medium d-md-none"></div>
+<div class="h-gutter-medium d-lg-none"></div>
 <!-- 
 <div class="index-video-wrapper">
   <div class="embed-responsive embed-responsive-16by9">
@@ -25,7 +25,9 @@
     <vg-volume></vg-volume>
     <vg-fullscreen></vg-fullscreen>
   </vg-controls>
-  <video #media [vgMedia]="media" id="singleVideo" preload="auto" crossorigin>
-    <source src="/assets/small.mp4" type="video/mp4" />
+
+  <video #media [poster]="" [vgMedia]="media" id="judeVid" preload="auto" crossorigin>
+    <source id="judeVideo" src="/assets/small.mp4" type="video/mp4" />
+    <vg-overlay-play></vg-overlay-play>
   </video>
 </vg-player>
