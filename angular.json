@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "../node_modules/videogular2/fonts/videogular.css",
+              "./node_modules/videogular2/fonts/videogular.css",
               "src/assets/themify-icons/themify-icons.css",
               "src/main.scss"
             ],
@@ -99,7 +99,7 @@
             "tsConfig": "tsconfig.spec.json",
             "scripts": [],
             "styles": [
-              "../node_modules/videogular2/fonts/videogular.css",
+              "./node_modules/videogular2/fonts/videogular.css",
               "src/assets/themify-icons/themify-icons.css",
               "src/main.scss"
             ],

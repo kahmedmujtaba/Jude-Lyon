@@ -35,7 +35,9 @@ import { VgBufferingModule } from 'videogular2/compiled/buffering';
     AboutModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
     VgCoreModule,
-    VgControlsModule
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   declarations: [AppComponent],
   providers: [],
