@@ -10,7 +10,6 @@
       display: flex;
       height: calc(#{$base-size} / 2);
       width: auto;
-      // filter: invert(1);
       &--icon {
         padding: 0.5rem;
         border: 1px solid $color-primary;

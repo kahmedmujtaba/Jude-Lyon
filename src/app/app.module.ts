@@ -14,11 +14,6 @@ import { ShellModule } from './shell/shell.module';
 import { AboutModule } from './about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { VgCoreModule } from 'videogular2/compiled/core';
-import { VgControlsModule } from 'videogular2/compiled/controls';
-import { VgOverlayPlayModule } from 'videogular2/compiled/overlay-play';
-import { VgBufferingModule } from 'videogular2/compiled/buffering';
-// import {SingleMediaPlayer} from './single-media-player';
 
 @NgModule({
   imports: [
@@ -33,17 +28,10 @@ import { VgBufferingModule } from 'videogular2/compiled/buffering';
     ShellModule,
     HomeModule,
     AboutModule,
-    AppRoutingModule, // must be imported as the last module as it contains the fallback route
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule
+    AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
   providers: [],
-  bootstrap: [
-    AppComponent
-    // SingleMediaPlayer
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

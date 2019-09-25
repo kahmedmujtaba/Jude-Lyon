@@ -1,36 +1,12 @@
 <div class="h-gutter-medium d-md-none"></div>
 
-<div class="embed-responsive embed-responsive-16by9">
-  <video controls class="embed-responsive-item" poster="/assets/images/video-thumb.jpg">
-    <!-- <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
-                        <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
-                        <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
-                        <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp> -->
-    <source src='/assets/small.mp4' type=video/mp4>
-  </video>
+<div class="index-video-wrapper">
+  <div class="embed-responsive embed-responsive-16by9">
+    <video controls poster="/assets/images/video-thumb.jpg" id="index-video">
+      <source src="/assets/small.mp4" type="video/mp4" />
+      <!-- <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+            <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+            <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp> -->
+    </video>
+  </div>
 </div>
-
-<!-- <vg-player>
-  <vg-controls>
-      <vg-play-pause></vg-play-pause>
-      <vg-playback-button></vg-playback-button>
-
-      <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-
-      <vg-scrub-bar>
-          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-          <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-      </vg-scrub-bar>
-
-      <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-
-      <vg-mute></vg-mute>
-      <vg-volume></vg-volume>
-
-      <vg-fullscreen></vg-fullscreen>
-  </vg-controls>
-
-  <video #media [vgMedia]="media" id="singleVideo" preload="auto" crossorigin>
-      <source src="/assets/small.mp4" type="video/mp4">
-  </video>
-</vg-player> -->
