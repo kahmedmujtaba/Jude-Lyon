@@ -10,11 +10,13 @@ import { WaysToWorkTogetherComponent } from '@app/ways-to-work-together/ways-to-
 import { WhoisjudeComponent } from '@app/whoisjude/whoisjude.component';
 import { ConnecttodayComponent } from '@app/connecttoday/connecttoday.component';
 import { ClientsComponent } from '@app/clients/clients.component';
+import { VideosectionComponent } from '@app/videosection/videosection.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule],
   declarations: [
     HomeComponent,
+    VideosectionComponent,
     WaysToWorkTogetherComponent,
     WhoisjudeComponent,
     ConnecttodayComponent,
