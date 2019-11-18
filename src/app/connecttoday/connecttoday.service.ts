@@ -8,6 +8,6 @@ export class ConnecttodayService {
   constructor(private http: HttpClient) {}
 
   sendData(data: any) {
-    return this.http.post('http://www.mocky.io/v2/5d2f640c34000050b664d841', data);
+    return this.http.post('http://localhost/saveContactForm.php', data);
   }
 }

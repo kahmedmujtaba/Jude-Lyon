@@ -13,7 +13,7 @@ q {
 
 .banner {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 
   @media screen and (min-width: 1441px) {
@@ -77,8 +77,8 @@ q {
       }
     }
     &_model {
-      background: url(/assets/images/jude-main.png) center/contain no-repeat;
-      height: calc(#{$base-size} * 1.9);
+      background: url(/assets/images/client-1.jpg) center/contain no-repeat;
+      height: calc(#{$base-size - 10} * 1.9);
       width: 100%;
       z-index: 1;
       position: absolute;
@@ -87,7 +87,8 @@ q {
       transform: translateX(-50%);
 
       @media screen and (max-width: 480px) {
-        height: calc(#{$base-size} * 1);
+        height: calc(#{$base-size - 18} * 1);
+        left: 38%;
       }
     }
   }

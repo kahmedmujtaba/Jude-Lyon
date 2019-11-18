@@ -4,12 +4,17 @@
 
 .jude-intro {
   &--pic {
-    background: url(/assets/images/who-is-Jude.png) center no-repeat;
+    background: url(/assets/images/who-is-Jude.png) bottom no-repeat;
     background-size: contain;
-    height: 25rem;
+    height: 28rem;
     width: auto;
     z-index: -1;
-    transform-origin: top;
-    transform: scale(1.5);
+    -webkit-transform-origin: top;
+    transform-origin: bottom;
+    -webkit-transform: scale(1.5);
+    transform: scale(1);
+    border: 1px solid #d1d2cf;
+    margin-top: 8px;
+    border-radius: 3px;
   }
 }

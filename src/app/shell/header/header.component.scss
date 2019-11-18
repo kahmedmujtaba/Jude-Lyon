@@ -6,7 +6,8 @@
   margin-bottom: $spacer;
 }
 
-.nav-link.dropdown-toggle {
+.nav-link.dropdown-toggle,
+.nav-item {
   cursor: pointer;
 }
 
