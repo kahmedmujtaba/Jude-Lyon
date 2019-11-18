@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -18,7 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
+    ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot(),
@@ -32,6 +31,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   declarations: [AppComponent],
   providers: [],
+  exports: [ReactiveFormsModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

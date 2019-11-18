@@ -29,4 +29,15 @@ export class HeaderComponent implements OnInit {
   get languages(): string[] {
     return this.i18nService.supportedLanguages;
   }
+
+  scrollToSection(sectionId: string) {
+    const elem = document.querySelector(`#${sectionId}`);
+    this.scrollTo(elem);
+  }
+
+  scrollTo(el: Element): void {
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

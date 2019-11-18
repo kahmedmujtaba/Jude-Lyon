@@ -15,21 +15,21 @@
     </button>
     <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link " routerLink="#about" (click)="ScrollToAbout()" routerLinkActive="active">
+        <a class="nav-item nav-link " (click)="scrollToSection('about')" routerLinkActive="active">
           <span translate>About</span>
         </a>
-        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+        <a class="nav-item nav-link " (click)="scrollToSection('whyUs')">
           <span translate>Why us</span>
         </a>
-        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+        <a class="nav-item nav-link " (click)="scrollToSection('contact')">
           <span translate>Connect</span>
         </a>
-        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+        <a class="nav-item nav-link " (click)="scrollToSection('clients')">
           <span translate>Our Clients</span>
         </a>
-        <a class="nav-item nav-link " routerLink="/about" routerLinkActive="active">
+        <!-- <a class="nav-item nav-link " href="#" target="_self" (click)="scrollToSection('testimonials')">
           <span translate> Testimonial </span>
-        </a>
+        </a> -->
       </div>
     </div>
   </nav>
