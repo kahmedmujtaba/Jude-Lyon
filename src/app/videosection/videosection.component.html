@@ -11,30 +11,7 @@
   </div>
 </div> -->
 
-<!-- video for medium size screens -->
-<vg-player class="embed-responsive embed-responsive-16by9 d-lg-none d-md-block">
-  <vg-controls>
-    <vg-play-pause></vg-play-pause>
-    <!-- <vg-playback-button></vg-playback-button> -->
-    <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-    <vg-scrub-bar>
-      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-    </vg-scrub-bar>
-    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-    <vg-mute></vg-mute>
-    <vg-volume></vg-volume>
-    <vg-fullscreen></vg-fullscreen>
-  </vg-controls>
-
-  <video #media [poster]="" [vgMedia]="media" id="judeVid" preload="auto" crossorigin>
-    <source id="judeVideo" src="/assets/small.mp4" type="video/mp4" />
-    <vg-overlay-play></vg-overlay-play>
-  </video>
-</vg-player>
-
-<!-- for larger screens -->
-<vg-player class="embed-responsive embed-responsive-21by9 d-none d-lg-block">
+<vg-player class="embed-responsive jude-responsive-video">
   <vg-controls>
     <vg-play-pause></vg-play-pause>
     <!-- <vg-playback-button></vg-playback-button> -->
