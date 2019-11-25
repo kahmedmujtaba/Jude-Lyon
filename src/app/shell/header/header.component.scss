@@ -17,6 +17,9 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
   .nav-link:not(:last-child) {
     padding-right: 1.5rem;
   }
